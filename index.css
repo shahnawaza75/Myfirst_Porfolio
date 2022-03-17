@@ -18,7 +18,7 @@ header {
 }
 
 #home_section {
-  background-image: url("/images/background_image.svg");
+  background-image: url("./images/background_image.svg");
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
@@ -61,4 +61,5 @@ span {
 .logo {
   font-size: 20px;
   font-weight: 600;
+  color: #6070ff;
 }
