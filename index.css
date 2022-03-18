@@ -7,19 +7,21 @@
 
 .btn1 {
   background: none;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #396df2;
   border-radius: 16px;
   padding: 16px;
   margin: 10px 0;
+  color: #396df2;
 }
 
 .btn2 {
   width: 200px;
   background: none;
-  border: 1px solid #dfe1e6;
+  border: 1px solid #396df2;
   border-radius: 16px;
   padding: 16px;
   margin: 10px 0;
+  color: #396df2;
 }
 
 header {
@@ -28,22 +30,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 5px 24px;
-}
-
-.btn1 a {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #396df2;
-}
-
-.btn2 a {
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  text-decoration: none;
-  color: #396df2;
 }
 
 #header a {
