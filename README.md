@@ -4,12 +4,17 @@
 
 Portfolio website mobile version
 Home section
-![Screenshoot]("./images/screenshot%20of%20mobile%20version.png")
+
 **Built With**
 
 - HTML
 - CSS
 - VS Code
+
+## LIVE DEM
+
+[LIVE DEMO]
+(https://github.com/shahnawaza75/Myfirst_Porfolio)
 
 ## Getting Started :
 
@@ -47,5 +52,7 @@ Use an IDE to develop and run it into your browser.
   **:handshake: Contributing**
   Contributions, issues, and feature requests are welcome!
   Give a :star:️ if you like this project!
-  **:memo: License**
-  This project is [MIT](./MIT.md) licensed.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.

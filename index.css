@@ -217,9 +217,11 @@ hr {
 
 .last_section {
   background-image: url("./images/Contactme.png");
-  height: 50rem;
-  width: 25rem;
+  min-height: 800px;
+  width: 100%;
   margin-top: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo1 {
@@ -237,7 +239,7 @@ hr {
 .logo2 {
   background-image: url(./images/Ellipse12.png);
   height: 21px;
-  width: 21px;
+  width: 34px;
   margin-left: 8rem;
 }
 
@@ -260,43 +262,59 @@ hr {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  margin-right: 3rem;
+
   color: white;
+  left: 24px;
+  width: 334px;
+  margin-left: 14px;
+  margin-bottom: 2rem;
 }
 
 .text1 {
-  height: 2.5rem;
-  width: 21rem;
+  height: 3rem;
+  width: 327px;
   align-items: center;
   margin-left: 1rem;
   border-radius: 0.5rem;
   margin-top: 1rem;
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 3px;
 }
 
-.text2 {
+/* .text2 {
   height: 2.5rem;
   width: 19rem;
   align-items: center;
   margin-left: 1rem;
   border-radius: 0.5rem;
-}
+} */
 
 .textarea_form {
   color: #b3bac5;
-  height: 7rem;
+  height: 10rem;
   margin-left: 0.8rem;
   margin-top: 1rem;
   border-radius: 0.5rem;
+  border: none;
+  padding: 1rem;
+  width: 327px;
 }
 
 .button_last {
-  height: 2rem;
+  height: 3rem;
   width: 7rem;
   color: #6070ff;
   margin-left: 1rem;
   font-weight: 500;
   border-radius: 0.5rem;
-  margin-top: 2rem;
+  margin-top: -50px;
+  border: none;
+}
+
+.button_last:hover {
+  background-color: blue;
+  color: white;
 }
 
 .end_logo {
@@ -309,11 +327,13 @@ hr {
   height: 2rem;
   width: 2rem;
   margin-left: 7rem;
-  margin-top: 2rem;
+  margin-top: -37px;
 }
 
 .logo5 {
   background-image: url(./images/Rectangle7.png);
   height: 3rem;
   width: 4rem;
+
+  margin-left: 15rem;
 }
