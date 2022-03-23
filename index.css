@@ -144,6 +144,10 @@ span {
   margin-right: 15px;
 }
 
+.languages_heading {
+  margin-left: 1rem;
+}
+
 .languages li {
   display: flex;
   align-items: center;
@@ -197,6 +201,7 @@ hr {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .languages_skills {
@@ -207,4 +212,108 @@ hr {
   font-size: 20px;
   line-height: 24px;
   padding-top: 1rem;
+  margin-left: 1rem;
+}
+
+.last_section {
+  background-image: url("./images/Contactme.png");
+  height: 50rem;
+  width: 25rem;
+  margin-top: 4rem;
+}
+
+.logo1 {
+  background-image: url("./images/Rectangle4.png");
+  height: 3rem;
+  width: 4rem;
+  margin-left: 19rem;
+}
+
+.logo_container {
+  display: flex;
+  height: 4rem;
+}
+
+.logo2 {
+  background-image: url(./images/Ellipse12.png);
+  height: 21px;
+  width: 21px;
+  margin-left: 8rem;
+}
+
+.logo3 {
+  background-image: url(./images/Ellipse3.png);
+  height: 64px;
+  width: 54px;
+  margin-left: 11rem;
+}
+
+.contact_me {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-right: 1rem;
+  color: white;
+}
+
+.last_para {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-right: 3rem;
+  color: white;
+}
+
+.text1 {
+  height: 2.5rem;
+  width: 21rem;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.text2 {
+  height: 2.5rem;
+  width: 19rem;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.textarea_form {
+  color: #b3bac5;
+  height: 7rem;
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.button_last {
+  height: 2rem;
+  width: 7rem;
+  color: #6070ff;
+  margin-left: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.end_logo {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.logo4 {
+  background-image: url(./images/Ellipse5.png);
+  height: 2rem;
+  width: 2rem;
+  margin-left: 7rem;
+  margin-top: 2rem;
+}
+
+.logo5 {
+  background-image: url(./images/Rectangle7.png);
+  height: 3rem;
+  width: 4rem;
 }
