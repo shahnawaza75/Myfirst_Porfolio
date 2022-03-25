@@ -335,3 +335,25 @@ hr {
   width: 4rem;
   margin-left: 15rem;
 }
+
+@media (min-width: 992px) {
+  #work_section .works {
+    padding: 20px 250px;
+  }
+
+  .work_card {
+    flex-direction: row;
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .work_card > div:first-of-type {
+    width: 40%;
+    margin-right: 10px;
+  }
+}
+
+.work_card {
+  transform: scale(0.7);
+  background-color: pink;
+}
