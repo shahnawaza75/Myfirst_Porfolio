@@ -68,12 +68,11 @@ h1 {
 
 .home_container {
   gap: 1px;
-  width: 30vw;
+  width: 55vw;
 
   /* height: 70%; */
   justify-content: space-around;
-  margin-top: 50px;
-  margin-left: 0.5rem;
+  margin-top: 5px;
 }
 
 span {
@@ -196,6 +195,7 @@ span {
 hr {
   background-color: #dfe1e6;
   height: 1px;
+  margin-bottom: 20px;
 }
 
 .languages_frameworks {
@@ -217,6 +217,7 @@ hr {
   font-size: 20px;
   line-height: 24px;
   margin-left: 1rem;
+  margin-bottom: 20px;
 }
 
 .last_section {
@@ -308,10 +309,10 @@ hr {
   height: 3rem;
   width: 7rem;
   color: #6070ff;
-  margin-left: 1rem;
+  margin-left: 49rem;
   font-weight: 500;
   border-radius: 0.5rem;
-  margin-top: -50px;
+  margin-top: 2px;
   border: none;
 }
 
@@ -382,7 +383,7 @@ hr {
     justify-content: flex-start;
     width: auto;
     gap: 32px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   #home_section {
@@ -431,17 +432,18 @@ hr {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-image: url(./images/newbimage.png);
   }
 
   .logo3 {
-    background-image: url(./images/Ellipse3.png);
+    /* background-image: url(./images/Ellipse3.png); */
     height: 67px;
     width: 47px;
     margin-left: 40rem;
   }
 
   .logo1 {
-    background-image: url(./images/Rectangle4.png);
+    /* background-image: url(./images/Rectangle4.png); */
     height: 3rem;
     width: 4rem;
     margin-left: 50rem;
@@ -496,5 +498,9 @@ hr {
 
   .languages img {
     width: 58px;
+  }
+
+  .frist_paraa {
+    margin-bottom: 15px;
   }
 }
