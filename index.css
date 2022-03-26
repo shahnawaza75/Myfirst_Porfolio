@@ -216,7 +216,7 @@ hr {
 }
 
 .last_section {
-  background-image: url("./images/Contactme.png");
+  background-image: url("./images/contactformfirst.svg");
   min-height: 800px;
   width: 100%;
   margin-top: 4rem;
@@ -413,5 +413,29 @@ hr {
 
   .work_card:nth-child(5n) {
     flex-direction: row-reverse;
+  }
+
+  .language_section {
+    display: flex;
+  }
+  .items_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo3 {
+    background-image: url(./images/Ellipse3.png);
+    height: 67px;
+    width: 47px;
+    margin-left: 22rem;
+  }
+
+  .logo1 {
+    background-image: url(./images/Rectangle4.png);
+    height: 3rem;
+    width: 4rem;
+    margin-left: 32rem;
+    margin-top: 15px;
   }
 }
