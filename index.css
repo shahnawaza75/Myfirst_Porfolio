@@ -217,7 +217,6 @@ hr {
 
 .last_section {
   background-image: url("./images/Contactme.png");
-
   min-height: 800px;
   width: 100%;
   margin-top: 4rem;
@@ -320,22 +319,9 @@ hr {
   background-color: blue;
   color: white;
 }
-/* 
-.end_logo {
-  display: flex;
-  margin-top: 1rem;
-} */
-
-/* .logo5 {
-  background-image: url(./images/Rectangle7.png);
-  height: 3rem;
-  width: 4rem;
-  margin-left: 15rem;
-} */
 
 .last_section2 {
   background-image: url("./images/contactfrommoblieversionlogo.png");
-
   width: 100%;
   position: relative;
   top: 45px;
