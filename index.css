@@ -86,6 +86,7 @@ span {
 }
 
 #work_section {
+  width: 100%;
   display: grid;
   place-content: center;
   gap: 20px;
@@ -215,16 +216,6 @@ hr {
   margin-left: 1rem;
 }
 
-.last_section {
-  background-image: url("./images/Contactme.png");
-  min-height: 800px;
-  width: 100%;
-  margin-top: 4rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-left: 10px;
-}
-
 /* .logo1 {
   background-image: url("./images/Rectangle4.png");
   height: 3rem;
@@ -256,26 +247,23 @@ hr {
   text-align: center;
   padding-right: 1rem;
   color: white;
-  position: relative;
-  top: 75px;
+  padding-top: 75px;
 }
 
 .last_para {
   font-weight: 400;
   font-size: 20px;
+  padding: 0 70px;
   line-height: 28px;
   text-align: center;
   color: white;
-  width: 334px;
   margin-left: 14px;
-  margin-bottom: 6rem;
-  position: relative;
-  top: 55px;
+  margin-bottom: 3rem;
 }
 
 .text1 {
   height: 3rem;
-  width: 327px;
+  width: 100%;
   align-items: center;
   margin-left: 1rem;
   border-radius: 0.5rem;
@@ -285,14 +273,6 @@ hr {
   margin-bottom: 3px;
 }
 
-/* .text2 {
-  height: 2.5rem;
-  width: 19rem;
-  align-items: center;
-  margin-left: 1rem;
-  border-radius: 0.5rem;
-} */
-
 .textarea_form {
   color: #b3bac5;
   height: 10rem;
@@ -301,7 +281,7 @@ hr {
   border-radius: 0.5rem;
   border: none;
   padding: 1rem;
-  width: 327px;
+  width: 100%;
 }
 
 .button_last {
@@ -320,6 +300,29 @@ hr {
   color: white;
 }
 
+#contactlast_section {
+  background-image: url("./images/Contactme.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+  width: 100%;
+  margin-top: 4rem;
+  /* padding-left: 10px; */
+}
+
+.contact_form_last_section {
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.contact_form_last_section input {
+}
+
 .last_section2 {
   background-image: url("./images/contactfrommoblieversionlogo.png");
   width: 100%;
@@ -328,4 +331,11 @@ hr {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+  body {
+    display: none;
+  }
 }
