@@ -374,7 +374,7 @@ hr {
 
   .home_container_forabout {
     display: flex;
-    width: 85vw;
+    width: 100vw;
     margin: 0 auto;
     padding: 150px 100px;
   }
@@ -479,8 +479,8 @@ hr {
 
   .about_container {
     flex-basis: 40%;
-    margin: 0 50px;
-    padding-left: 80px;
+    margin: 0 10px;
+    padding-left: -115px;
   }
 
   .image_float {
