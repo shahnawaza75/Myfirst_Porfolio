@@ -52,7 +52,7 @@ header {
 h1 {
   font-weight: 700;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .social_media {
@@ -222,39 +222,42 @@ hr {
   margin-top: 4rem;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 10px;
 }
 
-.logo1 {
+/* .logo1 {
   background-image: url("./images/Rectangle4.png");
   height: 3rem;
   width: 4rem;
   margin-left: 19rem;
-}
+} */
 
 .logo_container {
   display: flex;
   height: 4rem;
 }
 
-.logo2 {
+/* .logo2 {
   background-image: url(./images/Ellipse12.png);
   height: 21px;
-  width: 34px;
+  width: 23px;
   margin-left: 8rem;
-}
+} */
 
-.logo3 {
+/* .logo3 {
   background-image: url(./images/Ellipse3.png);
   height: 64px;
-  width: 54px;
+  width: 127px;
   margin-left: 11rem;
-}
+} */
 
 .contact_me {
   font-size: 2.5rem;
   text-align: center;
   padding-right: 1rem;
   color: white;
+  position: relative;
+  top: 75px;
 }
 
 .last_para {
@@ -263,10 +266,11 @@ hr {
   line-height: 28px;
   text-align: center;
   color: white;
-  left: 24px;
   width: 334px;
   margin-left: 14px;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
+  position: relative;
+  top: 55px;
 }
 
 .text1 {
@@ -307,7 +311,7 @@ hr {
   margin-left: 1rem;
   font-weight: 500;
   border-radius: 0.5rem;
-  margin-top: -50px;
+  margin-top: 12px;
   border: none;
 }
 
@@ -316,22 +320,12 @@ hr {
   color: white;
 }
 
-.end_logo {
-  display: flex;
-  margin-top: 1rem;
-}
-
-.logo4 {
-  background-image: url(./images/Ellipse5.png);
-  height: 2rem;
-  width: 2rem;
-  margin-left: 7rem;
-  margin-top: -37px;
-}
-
-.logo5 {
-  background-image: url(./images/Rectangle7.png);
-  height: 3rem;
-  width: 4rem;
-  margin-left: 15rem;
+.last_section2 {
+  background-image: url("./images/contactfrommoblieversionlogo.png");
+  width: 100%;
+  position: relative;
+  top: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
 }
