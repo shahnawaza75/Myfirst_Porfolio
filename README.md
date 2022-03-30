@@ -2,7 +2,7 @@
 
 **Portfolio website**
 
-Portfolio website mobile version
+Portfolio Desktop version
 Home section
 
 **Built With**
