@@ -7,6 +7,8 @@
 
 body {
   background-color: #e5e5e5;
+  width: 100%;
+  
 }
 
 .btn1 {
@@ -97,7 +99,7 @@ span {
   /* width: 90vw; */
   margin-left: 1rem;
   margin-right: 1rem;
-}
+  }
 
 .work_card {
   width: 100%;
@@ -177,7 +179,7 @@ span {
 .languages_logo {
   display: flex;
   justify-content: space-between;
-  width: 71%;
+  width: 95%;
   font-size: 1.5rem;
 }
 
@@ -374,7 +376,7 @@ hr {
 
   .home_container_forabout {
     display: flex;
-    width: 100vw;
+    width: 78vw;
     margin: 0 auto;
     padding: 150px 100px;
   }
@@ -479,8 +481,7 @@ hr {
 
   .about_container {
     flex-basis: 40%;
-    margin: 0 10px;
-    padding-left: -115px;
+    margin-right: 52px;
   }
 
   .image_float {
