@@ -70,7 +70,7 @@ header {
 
 .home_container {
   gap: 1px;
-  width: 55vw;
+  width: 78vw;
 
   /* height: 70%; */
   justify-content: space-around;
@@ -203,7 +203,7 @@ hr {
 .languages_frameworks {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 90%;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -214,7 +214,7 @@ hr {
 .languages_skills {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 90%;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -390,9 +390,9 @@ hr {
 
   #home_section {
     background-image: url("images/Headerbg.svg");
-    background-position: center;
+    background-position: 15% 20%;
     background-size: cover;
-    height: 100vh;
+  width: 100%;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -545,5 +545,27 @@ header {
   background-color: white;
 }
 
+.languages_skills {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 1rem;
+  margin-bottom: 20px;
+}
+
+.languages_frameworks {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-top: 15px;
+}
 
 }
