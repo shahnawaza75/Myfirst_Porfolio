@@ -2,7 +2,7 @@
 
 **Portfolio website**
 
-Portfolio website mobile version
+Portfolio Desktop version
 Home section
 
 **Built With**
@@ -14,7 +14,7 @@ Home section
 ## LIVE DEM
 
 [LIVE DEMO]
-(https://github.com/shahnawaza75/Myfirst_Porfolio)
+(https://shahnawaza75.github.io/Myfirst_Porfolio/)
 
 ## Getting Started :
 
