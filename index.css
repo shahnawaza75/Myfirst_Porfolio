@@ -361,7 +361,12 @@ hr {
 
   .desk-1 {
     display: block;
-    padding-right: 155px;
+    margin: auto 15px;
+    max-width: 40%;
+  }
+
+  .side_info {
+    width: 40%;
   }
 
   .mobi-1 {
@@ -450,7 +455,7 @@ hr {
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -504,7 +509,7 @@ hr {
   .card_container4 {
     width: 100vw;
     display: grid;
-    grid-template-columns: 85vw;
+    grid-template-columns: 90vw;
     gap: 80px;
     place-content: center;
     margin-top: 115px;
@@ -597,13 +602,12 @@ hr {
 
   .last_para {
     font-weight: 400;
-    width: 70%;
+    width: 100%;
     font-size: 20px;
     padding: 15px 300px;
     line-height: 28px;
     text-align: center;
     color: white;
-    margin-left: 235px;
     margin-bottom: 1rem;
   }
 
@@ -664,8 +668,8 @@ hr {
   .btn1 {
     background: none;
     border: 1px solid #396df2;
-    border-radius: 16px;
-    padding: 16px;
+    border-radius: 8px;
+    padding: 10px 16px;
     margin: 30px 0;
     color: #396df2;
   }
