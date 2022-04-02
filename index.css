@@ -34,7 +34,7 @@ body{
   border: 1px solid #396df2;
   border-radius: 16px;
   padding: 16px;
-  margin: 10px 0;
+  margin: 20px 0;
   color: #396df2;
 }
 
@@ -63,6 +63,7 @@ header {
   align-items: center;
   color: #172b4d;
   background-color: white;
+  padding-left: 23px;
 }
 
 h1 {
@@ -91,7 +92,7 @@ h1 {
   /* height: 70%; */
   justify-content: space-around;
   margin-top: 50px;
-  margin-left: 0.5rem;
+  margin-left: 10%;
 }
 
 span {
@@ -194,6 +195,8 @@ span {
   justify-content: space-between;
   width: 90%;
   font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-left: 1rem;
 }
 
 .languages {
@@ -201,15 +204,17 @@ span {
   font-weight: 500;
   font-size: 1rem;
   line-height: 24px;
+  margin: 25px;
 }
 
 .languages span {
-  margin-left: 15px;
+  margin-left: 6px;
 }
 
 hr {
   background-color: #dfe1e6;
   height: 1px;
+  margin:15px;
 }
 
 .languages_frameworks {
@@ -220,7 +225,7 @@ hr {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .languages_skills {
@@ -231,8 +236,8 @@ hr {
   font-size: 20px;
   line-height: 24px;
   padding-top: 1rem;
-  margin-left: 1rem;
-  margin-bottom: 15px;
+  margin-left: 2rem;
+  margin-bottom: 27px;
 }
 
 /* .logo1 {
@@ -348,19 +353,70 @@ hr {
     margin-right: 36px;
 }
 
+.aboutdiv{
+  margin-top: 60px;
+
+}
+
 .desk-nav {
   display: none;
 }
+.desk-1{
+  display: none;
+}
+.desk-2{
+  display: none;
+}
 
+.desk-3{
+  display: none;
+}
+.desk-4{
+  display: none;
+}
 /* media query */
 @media (min-width: 765px) {
- 
   .mobile-nav {
     display: none;
   }
 
   .desk-nav {
     display: block;
+  }
+  .desk-1{
+    display: block;
+    padding-right: 155px;
+  }
+
+  .mobi-1 {
+    display: none;
+  }
+
+  .desk-2{
+    display: block;
+    padding-left: 155px;
+  }
+
+  .mobi-2 {
+    display: none;
+  }
+
+  .desk-3{
+    display: block;
+    padding-right: 155px;
+  }
+
+  .mobi-3 {
+    display: none;
+  }
+
+  .desk-4 {
+    display: block;
+    padding-left: 155px;
+  }
+
+  .mobi-4 {
+    display: none;
   }
 
   .desk-nav ul {
@@ -403,9 +459,9 @@ hr {
     justify-content: center;
     align-items: center;
     background-color:white;
-    margin: -20px -13px;
-    height: 968px;
-    width: 100%;
+    margin: -20px -37px;
+    height: 903px;
+    width: 102%;
     border-bottom-left-radius: 150px;
    
   }
@@ -425,7 +481,7 @@ hr {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     align-content: center;
-    gap: 150px;
+    gap: 0px;
     background-color: white;
   }
 
@@ -479,7 +535,7 @@ hr {
     display: grid;
     grid-template-columns: 1fr;
     gap: 80px;
-    margin-top: 80px;
+    margin-top: 115px;
   }
 
   .aero {
@@ -507,7 +563,7 @@ hr {
 
   .languages {
     display: flex;
-    gap: 12px;
+    margin-bottom: 30px;
   }
 
   .languages img {
@@ -519,11 +575,11 @@ hr {
   }
 
   .home_container{
-    gap: 1px;
-    width: 45vw;
+    gap: 12px;
+    width: 35vw;
     justify-content: space-around;
     margin-top: 5px;
-    margin-right: 145px;
+    padding-right: 25px;
   }
 
   .logo{
@@ -568,6 +624,7 @@ header {
 
 .languages-container{
    flex-direction: column;
+   margin: 10px 15px;
 }
 
 .languages-J{
@@ -621,8 +678,89 @@ header {
 }
 
 span {
-  margin-top: 35px;
+  margin-top: 8px;
   color: #7f8cff;
   margin-bottom: 15px;
 }
+
+.ellipse1{
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  margin: auto;
+  padding: auto;
 }
+
+.work_card p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin: 20px 0;
+}
+
+.btn1 {
+  background: none;
+  border: 1px solid #396df2;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 30px 0;
+  color: #396df2;
+}
+
+.project_name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #172b4d;
+  margin-top:50px;
+}
+
+.languages_logo {
+  display: flex;
+  justify-content: space-between;
+  width: 160%;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-left: 1rem;
+}
+
+.languages_frameworks {
+  display: flex;
+  justify-content: space-between;
+  width: 158%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.languages_skills {
+  display: flex;
+  justify-content: space-between;
+  width: 158%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 27px;
+}
+hr {
+  background-color: #dfe1e6;
+  height: 1px;
+  margin:15px;
+  width: 165%;
+}
+
+.home_containertop{
+  display: flex;
+  flex-direction: column;
+  width: 53vw;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-right: 100px;
+}
+
+}
+
