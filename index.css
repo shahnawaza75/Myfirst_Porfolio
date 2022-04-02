@@ -119,7 +119,7 @@ span {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 3rem;
   align-items: flex-start;
   justify-content: flex-start;
   border: 1px solid #dfe1e6;
@@ -192,7 +192,7 @@ span {
 .languages_logo {
   display: flex;
   justify-content: space-between;
-  width: 71%;
+  width: 90%;
   font-size: 1.5rem;
 }
 
@@ -215,7 +215,7 @@ hr {
 .languages_frameworks {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 84%;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -226,12 +226,13 @@ hr {
 .languages_skills {
   display: flex;
   justify-content: space-between;
-  width: 70%;
+  width: 84%;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   padding-top: 1rem;
   margin-left: 1rem;
+  margin-bottom: 15px;
 }
 
 /* .logo1 {
@@ -276,7 +277,7 @@ hr {
   border-radius: 0.5rem;
   margin-top: 1rem;
   border: none;
-  padding: 0.5rem;
+  padding: 0.9rem;
   margin-bottom: 3px;
 }
 
@@ -418,7 +419,7 @@ hr {
     height: 496px;
     display: flex;
     flex-direction: row;
-    padding: 2rem;
+    padding: 1rem;
     align-items: flex-start;
     justify-content: center;
     border: 1px solid #dfe1e6;
@@ -469,7 +470,7 @@ hr {
   }
 
   .side_content {
-    width: 400px;
+    width: 572px;
   }
 
   .card_container4 {
@@ -519,11 +520,10 @@ hr {
 
   .home_container{
     gap: 1px;
-    width: 46vw;
+    width: 45vw;
     justify-content: space-around;
     margin-top: 5px;
-    margin-right: 95px;
-  
+    margin-right: 145px;
   }
 
   .logo{
@@ -567,7 +567,6 @@ header {
 }
 
 .languages-container{
-   background-color: red;
    flex-direction: column;
 }
 
@@ -578,14 +577,14 @@ header {
 }
 .last_para {
   font-weight: 400;
-    width: 60%;
+    width: 70%;
     font-size: 20px;
-    padding: 19px 86px;
+    padding:15px 300px;
     line-height: 28px;
     text-align: center;
     color: white;
-    margin-left: 227px;
-    margin-bottom: 3rem;
+    margin-left: 235px;
+    margin-bottom: 1rem;
 }
 
 .contact_form_last_section{
@@ -598,5 +597,32 @@ header {
     height: 100%;
 
 }
+.last_section2 {
+  background-image: url("./images/contact-formdesktopversion.png");
+  background-position: 156px 3px;
+  width: 100%;
+  position: relative;
+  top: 65px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
 
+.contact_me {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-right: 1rem;
+  color: white;
+  padding-top: 109px;
+}
+
+.img_third{
+  width: 40%;
+}
+
+span {
+  margin-top: 35px;
+  color: #7f8cff;
+  margin-bottom: 15px;
+}
 }
