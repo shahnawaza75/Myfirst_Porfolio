@@ -759,4 +759,13 @@ hr {
     margin-top: 50px;
     padding-right: 100px;
   }
+
+  #contactlast_section {
+    background-image: url("./images/Contactme.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 910px;
+    width: 100%;
+    background-color: white;
+  }
 }
