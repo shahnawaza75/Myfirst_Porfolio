@@ -529,7 +529,6 @@ hr {
 
   .card_container4 {
     width: 100vw;
-    /*margin: 0 auto;*/
     display: grid;
     grid-template-columns: 85vw;
     gap: 80px;
