@@ -11,10 +11,9 @@ Home section
 - CSS
 - VS Code
 
-## LIVE DEM
+## LIVE DEMO
 
-[LIVE DEMO]
-(https://shahnawaza75.github.io/Myfirst_Porfolio/)
+https://shahnawaza75.github.io/Myfirst_Porfolio/
 
 ## Getting Started :
 
