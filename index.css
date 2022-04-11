@@ -47,6 +47,12 @@ header {
   background-color: white;
 }
 
+.menu-up li a {
+  color: #fff;
+  font-size:  32px;
+  line-height: 44px;
+}
+
 #header a {
   text-decoration: none;
 }
@@ -146,6 +152,12 @@ span {
   border-radius: 8px;
   margin: 0 8px;
   list-style: none;
+}
+
+.menu-up li {
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 15vw;
 }
 
 .first_list {
@@ -359,24 +371,13 @@ hr {
   right: 0;
 }
 
-.menu-up li {
-  list-style: none;
-  margin-top: 20px;
-  margin-left: 15vw;
-}
-
-.menu-up li a {
-  color: #fff;
-  font-size:  32px;
-  line-height: 44px;
-}
-
 .menu-up {
   margin-top: 20vh;
 }
+
 .close {
    position: absolute;
-   color: #fff;
+   color:#fff;
    right: 20vw;
    top: 5vh;
    font-size: 30px;
