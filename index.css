@@ -349,6 +349,47 @@ hr {
   display: none;
 }
 
+.menu-up-container {
+  background-color: rgba(96, 112, 255, 0.7);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.menu-up li {
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 15vw;
+}
+
+.menu-up li a {
+  color: #fff;
+  font-size:  32px;
+  line-height: 44px;
+}
+
+.menu-up {
+  margin-top: 20vh;
+}
+.close {
+   position: absolute;
+   color: #fff;
+   right: 20vw;
+   top: 5vh;
+   font-size: 30px;
+}
+
+.nav-list {
+  display: none;
+}
+
+.pop-up {
+  display: block;
+}
+
 /* media query */
 @media (min-width: 765px) {
   .mobile-nav {
