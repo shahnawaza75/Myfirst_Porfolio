@@ -43,7 +43,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 24px;
+  padding: 5px 23px;
   background-color: white;
 }
 
@@ -52,7 +52,6 @@ header {
   font-size: 32px;
   line-height: 44px;
   font-weight: 600;
-  font-size: 32px;
 }
 
 #header a {
