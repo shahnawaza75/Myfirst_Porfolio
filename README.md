@@ -2,7 +2,7 @@
 
 **Portfolio website**
 
-Portfolio Desktop version
+Portfolio Desktop Popup
 Home section
 
 **Built With**

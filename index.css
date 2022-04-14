@@ -926,7 +926,7 @@ ul.project__lang {
   .content p {
     width: 63%;
     margin-left: 20%;
-    margin-top: -5%;
+    margin-top: -3%;
     line-height: 28px;
     font-size: 20px;
     align-items: center;
@@ -934,8 +934,8 @@ ul.project__lang {
   }
 
   .content h3 {
-    margin-left: 20%;
-    margin-top: -5%;
+    margin-left: 19.5%;
+    margin-top: -2%;
   }
 
   .content ul {
@@ -947,7 +947,7 @@ ul.project__lang {
     width: 400px;
     font-size: 48px;
     line-height: 60px;
-    margin-left: 22%;
+    margin-left: 21%;
     animation-name: introin;
     animation-duration: 4s;
   }
