@@ -1,233 +1,131 @@
-const mbar = document.getElementById('pop');
-const closem = document.querySelector('.close');
-const mPopup = document.querySelector('.menu-up-container');
+function openNav() {
+  document.getElementById('myNav').style.display = 'block';
+}
 
-mbar.addEventListener('click', () => {
-  mPopup.classList.add('pop-up');
+function closeNav() {
+  document.getElementById('myNav').style.display = 'none';
+}
+
+document.querySelector('.toggle').addEventListener('click', openNav);
+document.querySelector('.closebtn').addEventListener('click', closeNav);
+document.querySelectorAll('.pop-nav').forEach((link) => {
+  link.addEventListener('click', () => {
+    document.getElementById('myNav').style.display = 'none';
+  });
 });
 
-closem.addEventListener('click', () => {
-  mPopup.classList.remove('pop-up');
-});
+const projectname = document.querySelector('.projectname');
+const workSections = document.querySelector('.project-section');
+const modal = document.querySelector('.modal-example');
+const modalImg = document.querySelector('.modal-img');
+const company = document.querySelector('.company');
+const role = document.querySelector('.role');
+const year = document.querySelector('.year');
 
-mPopup.addEventListener('click', () => {
-  mPopup.classList.remove('pop-up');
-});
-
-//cards
-const cardsUl = document.getElementById('cards');
-
-const projects = [
+const projectsList = [
   {
-    id: 1,
-    heading1: 'Tonic',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    name: 'Tonic',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    description2: `Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry.
-    Lorem Ipsum has been the industry's 
-   standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type
-     and scrambled it to make a type specimen book.
-     It has survived not only five centuries, 
-     but also the leap into electronic typesetting, remaining essent`,
-    featuredImage:'./images/deskfirst.png',
-    featuredImage2: './images/deskfirst.png',
-    languages: ['html', 'css', 'javascript'],
-    linkLive: 'location.href=\'https://kayonga99.github.io/My-Portfolio/index.html\'',
-    linkSource: 'https://kayonga99.github.io/My-Portfolio',
+    imageLink: 'images/project1.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back end dev',
+    company: 'canopy',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
   },
   {
-    id: 2,
-    heading1: 'Multi-Post Stories',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    name: 'Multi-post stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: './images/desksecond.png',
-    description2: `Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry.
-    Lorem Ipsum has been the industry's 
-   standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type
-     and scrambled it to make a type specimen book.
-     It has survived not only five centuries, 
-     but also the leap into electronic typesetting, remaining essent`,
-    featuredImage2: './images/desksecond.png',
-    languages: ['html', 'css', 'javascript'],
-    linkLive: 'location.href=\'https://kayonga99.github.io/My-Portfolio/index.html\'',
-    linkSource: 'https://kayonga99.github.io/My-Portfolio',
-    left: true,
+    imageLink: 'images/project2.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Full Stack Dev',
+    company: 'Facebook',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
   },
   {
-    id: 3,
-    heading1: 'Tonic',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: './images/deskthird.png',
-    description2: `Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry.
-    Lorem Ipsum has been the industry's 
-   standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type
-     and scrambled it to make a type specimen book.
-     It has survived not only five centuries, 
-     but also the leap into electronic typesetting, remaining essent`,
-    featuredImage2: './images/deskthird.png',
-    languages: ['html', 'css', 'javascript'],
-    linkLive: 'location.href=\'https://kayonga99.github.io/My-Portfolio/index.html\'',
-    linkSource: 'https://kayonga99.github.io/My-Portfolio',
+    name: 'Facebook 360',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
+    imageLink: 'images/project3.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Back end Dev',
+    company: 'Facebook',
+    year: '2015',
+    sourceLink: '#',
+    demoLink: '#',
   },
   {
-    id: 4,
-    heading1: 'Multi-Post Stories',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    name: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    featuredImage: './images/deskfourth.png',
-    description2: `Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry.
-    Lorem Ipsum has been the industry's 
-   standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type
-     and scrambled it to make a type specimen book.
-     It has survived not only five centuries, 
-     but also the leap into electronic typesetting, remaining essent`,
-    featuredImage2: './images/deskfourth.png',
-    languages: ['html', 'css', 'javascript'],
-    linkLive: 'location.href=\'https://kayonga99.github.io/My-Portfolio/index.html\'',
-    linkSource: 'https://kayonga99.github.io/My-Portfolio',
-    left: true,
+    imageLink: 'images/project4.png',
+    technologies: ['html', 'css', 'javascript'],
+    role: 'Lead developer',
+    company: 'Uber',
+    year: '2018',
+    sourceLink: '#',
+    demoLink: '#',
   },
-
 ];
 
-const projectCards = projects.map((card) => `
-<li>
-<section class="card-list">
-  <div class="${card.left ? 'desk-top2' : 'desk-top'}">
-    <img class="animated" src="${card.featuredImage2}" alt="work1Snapshot" />
-    <img class="card" src="${card.featuredImage}" alt="work1Snapshot" />
-    <div class="">
-      <h3 class="tonic-class tonic-class-2">${card.heading1}</h3>
-      <div class="canopy">
-        <ul class="cards-ul">
-        ${card.heading2.map((heading, index) => `<li class="info${index}">${heading}</li>`).join('')}
-        </ul>
-      </div>
-      <p class="description">
-${card.description}
-      </p>
-      <ul class="tools">
-      ${card.languages.map((lang) => `<li class="tools-li">${lang}</li>`).join('')}
-      </ul>
-      <div class="view-project">
-        <button class="btn" type="button" onclick='showPop(${card.id})'>See Project</button>
-      </div>
-    </div>
-  </div>
-</section>
-</li>
-`).join('');
-
-cardsUl.innerHTML = projectCards;
-
-//pop ups:
-const openWindow = document.querySelector('.m-popUp');
-
-function popData(card) {
-  //const temp = document.createElement('template');
-  const box = document.getElementById('project');
-  box.innerHTML += `<section class="card-list-23">
-  <div class="desk-top">
-    <div class="">
-      <div class="x-class"> 
-        <h3 class="tonic-class-23">${card.heading1}</h3>
-        <h4 class="close-x">&times;</h4>
-      </div>
-        <div class="canopy">
-          <ul class="cards-ul">
-          ${card.heading2.map((heading, index) => `<li class="info${index}">${heading}</li>`).join('')}
-          </ul>
-        </div>
-        <img class="card" src="${card.featuredImage}" alt="work1Snapshot" />
-        <img class="nature-animated" src="${card.featuredImage2}" alt="nature animated picture" />
-        <div class="src-div">
-      <p class="src-description">
-        ${card.description2}
-      </p>
-      <div class="div-src">
-      <ul class="tools-src src-tools">
-        <li class="tools-li-src"> html</li>
-        <li class="tools-li-src">css</li>
-        <li class="tools-li">javaScript</li>
-        <li class="extra">github</li>
-        <li class="extra">ruby</li>
-        <li class="extra">Bootstraps  </li>
-      </ul>
-      <div class="view-project">
-        <a class="src-btn" href="https://github.com/Kayonga99/">See live <img src="./photos/icons/btn-icon.png" alt="button-icon"> </a>
-        <a class="src-btn" href="https://github.com/Kayonga99/">See Source <img src="./photos/icons/blue-github.png" alt="github-icon"> </a>
-      </div>
-    </div>
-    </div>
-</section>
-`;
-  //const box = document.getElementById('project');
-  //box.appendChild(temp.content);
-
-  const closeWindow = document.querySelector('.close-x');
-  closeWindow.addEventListener('click', () => {
-    openWindow.style.display = 'none';
+workSections.innerHTML = '';
+for (let i = 0; i < projectsList.length; i += 1) {
+  let languages = '';
+  projectsList[i].technologies.forEach((language) => {
+    languages += `
+      <li><a href='' class='skill' title='${language}' >${language}</a></li>
+    `;
   });
+  workSections.innerHTML += `
+      <div class='projects'>
+          <div class='img-web'>
+            <img src='${projectsList[i].imageLink}' alt='work 1' class='' />
+          </div>
+          <div class='project-description'>
+            <h1 class='title'>${projectsList[i].name}</h1>
+            <div class='role row'>
+              <div class="role-name">${projectsList[i].company}</div>
+                <div class="role-dot"></div>
+                <div class="role-job">${projectsList[i].role}</div>
+                <div class="role-dot"></div>
+                <div class="role-year">${projectsList[i].year}</div>
+            </div>
+            <div class='project-details'>
+              <p>
+                ${projectsList[i].description}
+              </p>
+              <ul class='skills'>
+                ${languages}
+              </ul>
+              <div classs="button-click">
+                <button type='button' class='btn btn-enabled project-modal-${i}'>See project</button>
+              </div>
+            </div>
+          </div>
+    </div>
+  `;
 }
 
-/* eslint-disable */;
-function showPop(id) {
-  projects.find((card) => {
-    if (Number(id) === Number(card.id)) {
-      popData(card);
-      openWindow.style.display = 'block';
-    }
+for (let i = 0; i < projectsList.length; i += 1) {
+  document.querySelector(`.project-modal-${i}`).addEventListener('click', () => {
+    projectname.innerHTML = projectsList[i].name;
+    modalImg.src = projectsList[i].imageLink;
+    company.innerHTML = projectsList[i].company;
+    role.innerHTML = projectsList[i].role;
+    year.innerHTML = projectsList[i].year;
+
+    document.querySelector('.project-section').classList.add('blur');
+    document.querySelector('.header').classList.add('blur');
+    document.querySelector('.content').classList.add('blur');
+    document.querySelector('.about').classList.add('blur');
+    document.querySelector('.contact-me').classList.add('blur');
+    modal.classList.add('show');
   });
 }
-
-// function popData(card) {
-//   const box = document.getElementById('project');
-//   box.innerHTML = `<section class="card-list-23">
-//   <div class="desk-top">
-//     <div class="pop_container">
-//       <div class="x-class">
-//         <h3 class="tonic-class-23">${card.heading1}</h3>
-//         <h4 class="close-x">&times;</h4>
-//       </div>
-//         <div class="canopy">
-//           <ul class="cards-ul">
-//           ${card.heading2.map((heading, index) => `<li class="info${index}">${heading}</li>`).join('')}
-//           </ul>
-//         </div>
-//         <img class="card" src="${card.featuredImage}" alt="work1Snapshot" />
-//         <img class="nature-animated" src="${card.featuredImage2}" alt="nature animated picture" />
-//         <div class="src-div">
-//       <p class="src-description">
-//         ${card.description2}
-//       </p>
-//       <div class="div-src">
-//       <ul class="tools-src src-tools">
-//         <li class="tools-li-src"> html</li>
-//         <li class="tools-li-src">css</li>
-//         <li class="tools-li">javaScript</li>
-//         <li class="extra">github</li>
-//         <li class="extra">ruby</li>
-//         <li class="extra">Bootstraps  </li>
-//       </ul>
-//       <div class="view-project">
-//         <a class="src-btn" href="https://github.com/Kayonga99/">See live <img src="./photos/icons/btn-icon.png" > </a>
-//         <a class="src-btn" href="https://github.com/Kayonga99/">See Source <img src="./photos/icons/blue-github.png" > </a>
-//       </div>
-//     </div>
-//     </div>
-// </section>
-// `;
-//   const closeWindow = document.querySelector('.close-x');
-//   closeWindow.addEventListener('click', () => {
-//     openWindow.style.display = 'none';
-//   });
-// }
+document.querySelector('.closeModal').addEventListener('click', () => {
+  modal.style.display = 'none';
+  window.location.reload();
+  document.querySelector('.header').classList.remove('blur');
+  document.querySelector('.showcase').classList.remove('blur');
+});
