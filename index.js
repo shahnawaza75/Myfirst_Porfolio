@@ -133,11 +133,12 @@ cardsUl.innerHTML = projectCards;
 const openWindow = document.querySelector('.m-popUp');
 
 function popData(card) {
-  const temp = document.createElement('template');
-  temp.innerHTML += `<section class="card-list-23">
+  //const temp = document.createElement('template');
+  const box = document.getElementById('project');
+  box.innerHTML += `<section class="card-list-23">
   <div class="desk-top">
     <div class="">
-      <div class="x-class">
+      <div class="x-class"> 
         <h3 class="tonic-class-23">${card.heading1}</h3>
         <h4 class="close-x">&times;</h4>
       </div>
@@ -169,8 +170,8 @@ function popData(card) {
     </div>
 </section>
 `;
-  const box = document.getElementById('project');
-  box.appendChild(temp.content);
+  //const box = document.getElementById('project');
+  //box.appendChild(temp.content);
 
   const closeWindow = document.querySelector('.close-x');
   closeWindow.addEventListener('click', () => {
@@ -187,3 +188,46 @@ function showPop(id) {
     }
   });
 }
+
+// function popData(card) {
+//   const box = document.getElementById('project');
+//   box.innerHTML = `<section class="card-list-23">
+//   <div class="desk-top">
+//     <div class="pop_container">
+//       <div class="x-class">
+//         <h3 class="tonic-class-23">${card.heading1}</h3>
+//         <h4 class="close-x">&times;</h4>
+//       </div>
+//         <div class="canopy">
+//           <ul class="cards-ul">
+//           ${card.heading2.map((heading, index) => `<li class="info${index}">${heading}</li>`).join('')}
+//           </ul>
+//         </div>
+//         <img class="card" src="${card.featuredImage}" alt="work1Snapshot" />
+//         <img class="nature-animated" src="${card.featuredImage2}" alt="nature animated picture" />
+//         <div class="src-div">
+//       <p class="src-description">
+//         ${card.description2}
+//       </p>
+//       <div class="div-src">
+//       <ul class="tools-src src-tools">
+//         <li class="tools-li-src"> html</li>
+//         <li class="tools-li-src">css</li>
+//         <li class="tools-li">javaScript</li>
+//         <li class="extra">github</li>
+//         <li class="extra">ruby</li>
+//         <li class="extra">Bootstraps  </li>
+//       </ul>
+//       <div class="view-project">
+//         <a class="src-btn" href="https://github.com/Kayonga99/">See live <img src="./photos/icons/btn-icon.png" > </a>
+//         <a class="src-btn" href="https://github.com/Kayonga99/">See Source <img src="./photos/icons/blue-github.png" > </a>
+//       </div>
+//     </div>
+//     </div>
+// </section>
+// `;
+//   const closeWindow = document.querySelector('.close-x');
+//   closeWindow.addEventListener('click', () => {
+//     openWindow.style.display = 'none';
+//   });
+// }
