@@ -18,6 +18,7 @@ const projectname = document.querySelector('.projectname');
 const workSections = document.querySelector('.project-section');
 const modal = document.querySelector('.modal-example');
 const modalImg = document.querySelector('.modal-img');
+const desc = document.querySelector('.desc');
 const company = document.querySelector('.company');
 const role = document.querySelector('.role');
 const year = document.querySelector('.year');
@@ -111,6 +112,7 @@ for (let i = 0; i < projectsList.length; i += 1) {
   document.querySelector(`.project-modal-${i}`).addEventListener('click', () => {
     projectname.innerHTML = projectsList[i].name;
     modalImg.src = projectsList[i].imageLink;
+    desc.innerHTML = projectsList[i].description;
     company.innerHTML = projectsList[i].company;
     role.innerHTML = projectsList[i].role;
     year.innerHTML = projectsList[i].year;
