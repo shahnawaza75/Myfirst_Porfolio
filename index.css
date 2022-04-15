@@ -1096,13 +1096,13 @@ ul.project__lang {
   .line {
     display: flex;
     height: 2px;
-    width: 500px;
+    width: 499px;
     background: #dfe1e6;
   }
 
   .contact-me {
     margin-top: 1px;
-    width: 99%;
+    width: 100%;
   }
 
   .contact-title {
